@@ -39,8 +39,9 @@ Replace **`your_module`** with your actual module path.
 ## Checklist
 
 - [ ] **`GET /ping`** returns **`Content-Type: application/json`** and body **`{"message":"pong"}`** (spacing may vary; keys/values must match).
+- [ ] **Virtual environment** created and **FastAPI** / **Uvicorn** / dependencies installed per **[Virtual environments and packages](./virtual_environments_and_packages.md)**.
 - [ ] Dependencies listed in **`requirements.txt`** / **`pyproject.toml`** per template.
 - [ ] **README** explains how to create venv, install, and run.
-- [ ] **Committed** and **pushed** to **`main`** for final review.
+- [ ] **Committed** and **pushed** to **`main`** for final review (solution code only—**not** personal **`test_*.py`** files; see **[Testing with pytest](./testing_with_pytest.md)**).
 
 Congratulations—you now have a minimal **JSON API** foundation without relying on terminal UI frameworks.

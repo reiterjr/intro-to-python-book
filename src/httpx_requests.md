@@ -1,6 +1,6 @@
 # HTTP client with HTTPX
 
-**HTTPX** is a modern **HTTP client** (sync and async). Your template lists it alongside FastAPI so you can **call** other services from scripts or tests.
+**HTTPX** is a modern **HTTP client** (sync and async). Install it after you set up your **virtual environment** and dependencies (**[Virtual environments and packages](./virtual_environments_and_packages.md)**).
 
 ## GET request
 

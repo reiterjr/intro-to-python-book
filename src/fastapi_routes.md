@@ -43,7 +43,8 @@ FastAPI **parses** and **validates** types for you.
 
 ## Implement
 
-1. Create **`app.py`** (or the filename your template uses) with **`app = FastAPI()`**.
-2. Add **`GET /`** returning any small JSON dict.
-3. Add **`GET /ping`** returning **`{"message": "pong"}`** (your **capstone** route—keep it working from here on).
-4. **Commit** and **push**.
+1. Complete **[Virtual environments and packages](./virtual_environments_and_packages.md)** so **FastAPI** is installed in your venv.
+2. Create **`app.py`** (or the filename your template uses) with **`app = FastAPI()`**.
+3. Add **`GET /`** returning any small JSON dict.
+4. Add **`GET /ping`** returning **`{"message": "pong"}`** (your **capstone** route—keep it working from here on).
+5. **Commit** and **push** (application code only—not personal test files).

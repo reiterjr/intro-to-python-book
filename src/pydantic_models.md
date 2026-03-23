@@ -1,6 +1,12 @@
 # Pydantic models
 
-**Pydantic** validates and parses data into Python objects—ideal for **JSON** bodies in web APIs. The examples below stay small so you can focus on syntax and validation before wiring routes.
+**Pydantic** validates and parses data into Python objects—ideal for **JSON** bodies once you reach the web chapters. The examples below stay small so you can focus on syntax and validation first.
+
+Install locally if needed (your template may already include it):
+
+```bash
+pip install pydantic
+```
 
 ## `BaseModel` and fields
 
