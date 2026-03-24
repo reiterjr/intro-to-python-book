@@ -184,7 +184,7 @@ From `main.py` inside `myapp`, you might use `import myapp.tokens` or `from myap
 >
 > Commit often and push your final solution when ready
 
-- Create a folder names modules
+- Create a folder named modules
 - Under modules, create `tokens.py` with a `random_token` function and `timestamp`
 - Create an empty `__init__.py` file under the modules folder
 - Import and call them from `main.py` or a small test script.
