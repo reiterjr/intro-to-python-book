@@ -122,8 +122,11 @@ python main.py
 ```
 
 ## Your Turn
+> [!NOTE]
+>
+> Refer to your source code files for more details on what to do.
 
-1. Inside **`main`**, add **variables** (with annotations), **`print`**  **f-strings**
-2. Run: **`python main.py`**
-3. Optionally try **`pytest` locally** (see **[Testing with pytest](./testing_with_pytest.md)**)—**do not push** practice tests.
-4. **Commit** and **push** your solution source only.
+
+> [!IMPORTANT]
+>
+> Commit often and push your final solution when ready
