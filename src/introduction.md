@@ -9,10 +9,12 @@ Your work lives in a **GitHub Classroom** repository created from a **base templ
 **Grading:** Assignments are checked in part by an **autograder** on GitHub Classroom that runs **`pytest`**. You will learn to run **`pytest` locally** early on; the **official** tests live on the grader side.
 
 > [!WARNING]
+>
 > **Do not push your own tests**  
 > Practice tests stay **local**. The autograder supplies tests that you do not need to modify. **Never commit or push** personal **`test_*.py`** files you wrote for practice, **`.pytest_cache/`**, or **`__pycache__`** unless your instructor explicitly tells you otherwise. See [Testing with Pytest](./testing_with_pytest.md) for more details.
 
 > [!IMPORTANT]
+>
 > **GitHub Classroom**
 >
 > 1. Open **[Accept the GitHub Classroom assignment](https://classroom.github.com/a/f2frF2Rk)**.
@@ -21,14 +23,17 @@ Your work lives in a **GitHub Classroom** repository created from a **base templ
 > 4. **Clone** your repo and open the project in your editor. (**Virtual environments** are covered near the **end**, right before the web chapters.)
 
 > [!NOTE]
+>
 > **One template, whole series**  
 > Pay attention to various assignments listed in this book as some will have you clone additional class repos.
 
 > [!TIP]
+>
 > **Submit after each milestone**  
 > When you finish a chapter’s exercises, **commit** with a clear message and **push** to **`main`** (or the branch your instructor uses).
 
 > [!WARNING]
+>
 > **Feedback pull request**  
 > If your repo has a **Feedback** PR for instructor comments, **do not merge or close it**. Keep working on **`main`** and pushing; treat that PR as a discussion thread only.
 
