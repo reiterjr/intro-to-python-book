@@ -1,4 +1,15 @@
-# Getting started: `main` and your first program
+# Getting started
+
+> [!IMPORTANT]
+>
+> **GitHub Classroom**
+>
+> - Accept the [GitHub Classroom assignment](https://classroom.github.com/a/pMklACjM) for this chapter.
+> - Complete any **email / invitation** steps your course requires.
+> - **Clone** your repo and open the project in your editor.
+
+## Local experimentation
+### `main` and your first program
 
 Start with a single **entry function**—**`main`**—and the **`if __name__ == "__main__":`** guard. Everything else in this chapter (**variables**, **indentation**, **type annotations**, **`print`**) lives **inside** the body of **`main`** so you have one clear place where your program runs.
 
