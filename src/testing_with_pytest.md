@@ -1,6 +1,7 @@
 # Testing with pytest
-
-Your **GitHub Classroom** assignment is graded in part by an **autograder** that runs **`pytest`** against your repository. You should learn to run tests **locally** so you catch failures before you push.
+> [!TIP]
+>
+> For this chapter, you will only be creating and testing locally. The GitHub Classroom is already setup with tests to grade your solutions.
 
 ## Install pytest locally
 
@@ -16,14 +17,13 @@ Then run from your project root (where your code and the autograder’s layout e
 pytest
 ```
 
-Your **template** may already list **`pytest`** as a dependency; use whatever **`pip install -r`** / **`uv sync`** instructions you were given.
-
 ## A function you can test
 
-Prefer testing **functions that return values**—easy to assert:
+Prefer testing **functions that return values** as they are often easier to assert:
 
 ```python
 # greeting.py
+# a function that accepts a str typed argument and returns a str typed value
 def greeting(name: str) -> str:
     return f"Hello, {name}!"
 ```
@@ -38,7 +38,26 @@ def test_greeting_includes_name():
 
 Run: **`pytest test_greeting.py -v`**
 
-## Testing `print` output with `capsys`
+### Example test output
+```zsh
+pytest -v 
+===================================================================================== test session starts =====================================================================================
+platform darwin -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0 -- /Users/user/.local/pipx/venvs/pytest/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/user/Documents/Student-Views/pygames
+collected 1 item                                                                                                                                                                              
+
+test_greeting.py::test_greeting_name PASSED                                                                                                                                             [100%]
+
+====================================================================================== 1 passed in 0.00s ======================================================================================
+```
+
+> [!TIP]
+>
+> `pytest` will automatically find your files that have the "test" prefix or suffix and use it. The `-v` is nice to see more details about the test.
+
+## Testing output
+###  Using capsys
 
 To check **`print("Hello, World!")`**, capture **stdout** with pytest’s **`capsys`** fixture:
 
@@ -71,14 +90,6 @@ import pytest
 def test_square(n, expected):
     assert n * n == expected
 ```
-
-> [!WARNING]
-> **Do not push your own tests**  
-> The course **autograder** supplies the official **`pytest`** tests on GitHub Classroom. They run in CI when you push; you do **not** see those files as something to submit.
->
-> **Locally**, you may create **`test_*.py`** files or a **`tests/`** folder to practice. **Never `git add` / commit / push** your personal test files unless your instructor explicitly tells you to. Pushing extra tests can interfere with grading, collide with hidden tests, or violate the assignment rules.
->
-> **Do not push** **`__pycache__`**, **`.pytest_cache/`**, or local virtualenv folders either—use **`.gitignore`** as your template provides.
 
 ## Final Example
 Here is one final example complete with test output. For this one, the main program is quite simple, just like what you have seen already.
@@ -167,11 +178,6 @@ FAILED test_hello.py::test_main_prints_hello_world - Failed: Expected exactly th
 ================================================================================== 1 failed in 0.05s ==================================================================================
 ```
 
-Your turn!
+## Your Turn
 
-## Implement
-
-1. **`pip install pytest`** (or use your template’s env).
-2. Write **`greet(name)`** that returns a string and a **`say_hi()`** that **`print`s** a fixed greeting; verify both **locally** with **`pytest`** and **`capsys`**.
-3. **Delete or keep** your practice tests **only on disk**—do **not** push them.
-4. **Commit** and **push** only your **solution source** (e.g. **`hello.py`**, **`main.py`**) per the rubric.
+Recreate what was shown above but modify it a bit. Instead of the `greeting` function accepting a `str` parameter, have it accept an `int` parameter. The `return` statement can still be a formatted string. For example, `return f"Zip code {zipcode}"`.
