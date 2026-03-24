@@ -24,7 +24,8 @@ def main() -> None:
 
 Later in the course you will use the same **“define `main` + guard”** pattern so a file can also expose a **FastAPI `app`**; **Uvicorn** appears only in the final chapters.
 
-## Running the program: `if __name__ == "__main__":`
+## Running the program:
+### `if __name__ == "__main__":`
 
 When Python runs a file **as the main script** (e.g. **`python main.py`**), the special module name **`__main__`** is used. When the same file is **imported** elsewhere, its name is usually the **module name** (e.g. **`main`**).
 
@@ -40,7 +41,8 @@ if __name__ == "__main__":
 
 So: **define** `main` at the top level (no indentation), then **invoke** it inside the guard.
 
-## Inside `main`: indentation
+## Indentation
+### Inside `main`
 
 Python uses **indentation** (usually **4 spaces**) to show what belongs to a block. Everything inside **`main`** must be indented **one level** more than **`def main`**.
 
@@ -108,10 +110,9 @@ Run with:
 python main.py
 ```
 
-## Implement
+## Your Turn
 
-1. Create **`main.py`** (or use your template’s entry file) with **`def main() -> None:`**, an indented body, and **`if __name__ == "__main__": main()`**.
-2. Inside **`main`**, add **variables** (with annotations if required), **`print`** / **f-strings**, and optional nested **`if`** to practice indentation.
-3. Run: **`python main.py`**
-4. Optionally try **`pytest` locally** (see **[Testing with pytest](./testing_with_pytest.md)**)—**do not push** practice tests.
-5. **Commit** and **push** your solution source only.
+1. Inside **`main`**, add **variables** (with annotations), **`print`**  **f-strings**
+2. Run: **`python main.py`**
+3. Optionally try **`pytest` locally** (see **[Testing with pytest](./testing_with_pytest.md)**)—**do not push** practice tests.
+4. **Commit** and **push** your solution source only.
