@@ -10,7 +10,7 @@ Your work lives in a **GitHub Classroom** repository created from a **base templ
 
 > [!WARNING]
 > **Do not push your own tests**  
-> Practice tests stay **local**. The autograder supplies **hidden** tests. **Never commit or push** personal **`test_*.py`** files, **`tests/`** trees you wrote for practice, **`.pytest_cache/`**, or **`__pycache__`** unless your instructor explicitly tells you otherwise. See **[Testing with pytest](./testing_with_pytest.md)**.
+> Practice tests stay **local**. The autograder supplies tests that you do not need to modify. **Never commit or push** personal **`test_*.py`** files you wrote for practice, **`.pytest_cache/`**, or **`__pycache__`** unless your instructor explicitly tells you otherwise. See [Testing with Pytest](./testing_with_pytest.md) for more details.
 
 > [!IMPORTANT]
 > **GitHub Classroom**
@@ -22,7 +22,7 @@ Your work lives in a **GitHub Classroom** repository created from a **base templ
 
 > [!NOTE]
 > **One template, whole series**  
-> Add files and features to the **same** Classroom project as you go. Do not assume a separate “chapter repo” per week unless your instructor says otherwise.
+> Pay attention to various assignments listed in this book as some will have you clone additional class repos.
 
 > [!TIP]
 > **Submit after each milestone**  
@@ -33,6 +33,8 @@ Your work lives in a **GitHub Classroom** repository created from a **base templ
 > If your repo has a **Feedback** PR for instructor comments, **do not merge or close it**. Keep working on **`main`** and pushing; treat that PR as a discussion thread only.
 
 ## Capstone preview
+
+There will be a capstone project that will come at the end and here is a small preview of that project. 
 
 The **final project** is a **Python web server** (FastAPI + Uvicorn) that exposes a custom route:
 
@@ -47,4 +49,7 @@ The path through the book is: **basics → pytest mindset → more Python → Py
 - **Git** and a code editor.
 - A terminal to run **`python`**, **`pip`**, and later **`pytest`** and **`uvicorn`**.
 
-Next: **getting started** with **`main`** and your first program.
+## Your Turn
+The code that you cloned for your first assigment is prepped with some boiler plate code. There are code comments in `hello.py` the direct you what to do.
+
+Make your edits and commit/push your code back up to your provided repo.
