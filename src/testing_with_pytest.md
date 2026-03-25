@@ -32,7 +32,7 @@ def greeting(name: str) -> str:
 # tests/test_greeting.py  (LOCAL ONLY — see warning below)
 from greeting import greeting
 
-def test_greeting_includes_name():
+def test_greeting():
     assert greeting("World") == "Hello, World!"
 ```
 
@@ -191,4 +191,10 @@ FAILED test_hello.py::test_main_prints_hello_world - Failed: Expected exactly th
 
 ## Your Turn
 
-Recreate what was shown above but modify it a bit. Instead of the `greeting` function accepting a `str` parameter, have it accept an `int` parameter. The `return` statement can still be a formatted string. For example, `return f"Zip code {zipcode}"`.
+> [!NOTE]
+>
+> Reminder, because there is no assigment for this chapter, there is no classroom repo to push your code.
+
+Recreate what was shown above under [A function you can test](./testing_with_pytest.md#a-function-you-can-test) but modify it a bit. Instead of the `greeting` function accepting a `str` parameter, have it accept an `int` parameter for a zip code. Optionally, this is a great spot to practice parameter testing. 
+
+The `return` statement can still be a formatted string. For example, `return f"Zip code {zipcode}"`.
