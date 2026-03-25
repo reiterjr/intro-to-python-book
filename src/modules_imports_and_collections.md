@@ -187,6 +187,6 @@ From `main.py` inside `myapp`, you might use `import myapp.tokens` or `from myap
 - Create a folder named modules
 - Under modules, create `tokens.py` with a `random_token` function and `timestamp`
 - Create an empty `__init__.py` file under the modules folder
-- Import and call them from `main.py` or a small test script.
+- Import and call them from `hello.py`.
 - Build a `dict` representing a fake server config (`host`, `port`, `use_ssl`) and iterate over each field to print its value with a formatted string.
 - **Commit** and **push**.
