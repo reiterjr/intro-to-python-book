@@ -58,3 +58,48 @@ The path through the book is: **basics → pytest mindset → more Python → Py
 The code that you cloned for your first assigment is prepped with some boiler plate code. There are code comments in `hello.py` the direct you what to do.
 
 Make your edits and commit/push your code back up to your provided repo.
+
+## Results
+
+Once you push your code, an automated test will run and score your assignment. To see the details, you can click on the Actions tab for your repo. Here is what that could look like.
+
+![Screenshot of the GitHub Actions Autograding Reporter for a passing assignment](./imgs/autograder.png)
+
+Expand the Autograding Reporter to see the finer details and your score.
+
+```
+🔄 Processing: test-hello
+✅ test main prints hello world - line 4
+Test code:
+    """Check that main() prints exactly 'Hello, World!'"""
+    
+    # Run the student's main function
+    hello.main()
+    
+    # Capture everything that was printed
+    captured = capsys.readouterr()
+    
+    # Clean up the output (remove extra spaces/newlines)
+    output = captured.out.strip()
+    expected = "Just write 175 lines of Python"
+    
+    # Use pytest.fail() instead of assert → no ugly diff at the bottom!
+    if output != expected:
+        pytest.fail(f"Expected exactly this: {expected} But your main() printed: \
+{output}")
+
+Total points for test-hello: 50.00/50
+
+Test runner summary
+┌────────────────────┬─────────────┬─────────────┐
+│ Test Runner Name   │ Test Score  │ Max Score   │
+├────────────────────┼─────────────┼─────────────┤
+│ test-hello         │ 50          │ 50          │
+├────────────────────┼─────────────┼─────────────┤
+│ Total:             │ 50          │ 50          │
+└────────────────────┴─────────────┴─────────────┘
+🏆 Grand total tests passed: 1/1
+
+Notice: Points 50/50
+Notice: {"totalPoints":50,"maxPoints":50}
+```
