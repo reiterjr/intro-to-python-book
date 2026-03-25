@@ -63,6 +63,12 @@ Make your edits and commit/push your code back up to your provided repo.
 
 Once you push your code, an automated test will run and score your assignment. To see the details, you can click on the Actions tab for your repo. Here is what that could look like.
 
+In the GUI, or the GitHub website, click on the Actions tab.
+
+![Actions tab](./imgs/actions-tab.png)
+
+From there, you will be able to drill down into any section you'd like. The scored results are under the Autograding Reporter section.
+
 ![Screenshot of the GitHub Actions Autograding Reporter for a passing assignment](./imgs/autograder.png)
 
 Expand the Autograding Reporter to see the finer details and your score.
