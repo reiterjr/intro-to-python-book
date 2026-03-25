@@ -154,6 +154,9 @@ class Status(Enum):
 > Commit often and push your final solution when ready
 
 
-1. Define `BaseModel` classes for something simple (for example `User` with `username`, `age`, and any default or `Field` constraints your rubric asks for).
-2. Instantiate from literals or from a `dict` with `model_validate`, then print a field.
-3. **Commit** and **push**.
+- Define `BaseModel` classes for something simple 
+    - Give it the name `User`
+        - Make a field for `username`
+        - Make a field for `age`, and any default or `Field` constraints
+- Instantiate from literals or from a `dict` with `model_validate`, then print a field.
+- **Commit** and **push**.
