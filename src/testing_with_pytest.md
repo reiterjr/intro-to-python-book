@@ -29,7 +29,7 @@ def greeting(name: str) -> str:
 ```
 
 ```python
-# test_greeting.py  (LOCAL ONLY — see warning below)
+# tests/test_greeting.py  (LOCAL ONLY — see warning below)
 from greeting import greeting
 
 def test_greeting_includes_name():
@@ -68,7 +68,7 @@ def say_hello() -> None:
 ```
 
 ```python
-# test_hello.py  (LOCAL ONLY)
+# tests/test_hello.py  (LOCAL ONLY)
 from hello import say_hello
 
 def test_say_hello_prints(capsys):
@@ -91,6 +91,16 @@ def test_square(n, expected):
     assert n * n == expected
 ```
 
+That setup is useful when some **code under test** should map each input to a known result—here, squaring integers. A tiny module might define:
+
+```python
+# math_utils.py
+def square(n: int) -> int:
+    return n * n
+```
+
+The same parametrized table then targets that function: use `assert square(n) == expected` in the test body instead of inlining `n * n`, so the examples exercise **your** implementation, not only the math in the test.
+
 ## Final Example
 Here is one final example complete with test output. For this one, the main program is quite simple, just like what you have seen already.
 
@@ -98,7 +108,6 @@ Here is one final example complete with test output. For this one, the main prog
 def main() -> None:
     # intentionally missing the comma "," after Hello
     print("Hello World!")    
-
 
 if __name__ == "__main__":
     main()
@@ -114,6 +123,8 @@ Hello World!
 To test, you could make this:
 
 ```python
+# tests/test_hello.py
+
 import pytest
 import hello  # ← imports the hello.py module
 
