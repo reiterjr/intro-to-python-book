@@ -4,7 +4,7 @@
 >
 > **GitHub Classroom**
 >
-> - Accept the [GitHub Classroom assignment]() for this chapter.
+> - Accept the [GitHub Classroom assignment](https://classroom.github.com/a/739KFkf9) for this chapter.
 > - Complete any **email / invitation** steps your course requires.
 > - **Clone** your repo and open the project in your editor.
 
