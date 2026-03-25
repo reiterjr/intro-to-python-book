@@ -153,7 +153,6 @@ class Status(Enum):
 >
 > Commit often and push your final solution when ready
 
-
 - Define `BaseModel` classes for something simple 
     - Give it the name `User`
         - Make a field for `username`
