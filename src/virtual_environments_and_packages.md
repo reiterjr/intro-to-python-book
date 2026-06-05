@@ -1,4 +1,4 @@
-# Virtual environments and packages (before the web modules)
+# Virtual environments and packages
 
 By this point in the course you have been writing Python with whatever interpreter your template and editor use. For the **final web chapters**, you want an isolated environment and the right **libraries** installed cleanly.
 
