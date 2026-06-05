@@ -36,7 +36,7 @@ Example:
 pip install fastapi uvicorn pydantic httpx
 ```
 
-Or use **`pip install -r requirements.txt`**, **`uv sync`**, or **Poetry**, per your template.
+Or use **`pip install -r requirements.txt`**, **`uv sync`**, or `**Poetry**`, per your template.
 
 ## Running the web server (preview)
 
