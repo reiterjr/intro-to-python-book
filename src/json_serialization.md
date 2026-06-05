@@ -4,7 +4,7 @@
 >
 > **GitHub Classroom**
 >
-> - Accept the [GitHub Classroom assignment]() for this chapter.
+> - Accept the [GitHub Classroom assignment](https://classroom.github.com/a/FMX90TYo) for this chapter.
 > - Complete any **email / invitation** steps your course requires.
 > - **Clone** your repo and open the project in your editor.
 
@@ -117,6 +117,7 @@ def test_ping_body_wrong_type_in_json():
 >
 > Commit often and push your final solution when ready
 
-- Create a model for a `{"status": "ok", "code": 200}`-shaped object.
+- Using `BaseModel` from `pydantic`, create a model for a `{"status": "ok", "code": 200}`-shaped object.
 - Serialize with `model_dump_json()`, parse back with `model_validate_json`.
+- Optionally, use the `assert` statement to check the original serialized object against the parsed back object.
 - **Commit** and **push**.
