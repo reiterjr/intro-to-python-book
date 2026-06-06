@@ -15,7 +15,7 @@ By this point in the course you have been writing Python with whatever interpret
 A **virtual environment** is a directory of packages for **one** project.
 
 ```bash
-python3 -m venv .venv
+python3 -m venv .venv # the .venv will be the name of the folder for your environment
 ```
 
 **Activate:**
@@ -36,12 +36,12 @@ Your **Classroom template** may ship **`pyproject.toml`** or **`requirements.txt
 - **`fastapi`** — web framework  
 - **`uvicorn`** — ASGI server  
 - **`pydantic`** — data validation (you already used it earlier; ensure it is installed here if needed)  
-- **`httpx`** — HTTP client  
+- **`httpx2`** — HTTP client  
 
 Example:
 
 ```bash
-pip install fastapi uvicorn pydantic httpx
+pip install fastapi uvicorn pydantic httpx2
 ```
 
 Or use **`pip install -r requirements.txt`**, **`uv sync`**, or **`Poetry`**, per your template.
@@ -145,6 +145,6 @@ Stop the server with **Ctrl+C** when you are done.
 1. Create and activate **`.venv`** in your repo (if you have not already).
 2. Install **FastAPI**, **Uvicorn**, **HTTPX**, and ensure **Pydantic** is available.
 3. Confirm **`python -c "import fastapi, uvicorn, httpx, pydantic"`** succeeds.
-4. Add **`hello.py`** with **`GET /`** → **`{"message": "ping"}`** and **`GET /ping`** → **`{"message": "pong"}`**.
+4. Add **`hello.py`** with **`GET /ping`** → **`{"message": "pong"}`**.
 5. Start the server with **`python hello.py --host 127.0.0.1 --port 8000 --reload`**, then verify both URLs (browser, **`curl`**, or **`/docs`**).
 6. **Commit** lockfiles / dependency files your instructor wants—**not** **`.venv`** itself. **`hello.py`** is optional to commit unless your instructor asks for it.
